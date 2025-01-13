@@ -20,7 +20,7 @@ function displayProducts(arrayOfProducts) {
     let displayOfProducts = `
 <div class="card" style="width: 18rem;">
    <div class="card-body">
-    <h5 class="card-title">Supermarket Products </h5>
+    <h5 class="card-title">Product: </h5>
     <p class="card-text">${supermarketProduct.name}</p>
   </div>
   <ul class="list-group list-group-flush">
