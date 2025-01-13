@@ -7,29 +7,30 @@ const supermarketProducts = [
   { name: "fuji apples", category: "Produce", price: 4.12, isInStock: true },
 ];
 
-function displayBands(arrayOfBands) {
-  for (let i = 0; i < arrayOfBands.length; i++) {
-    let inStock = "";
-    const musicBand = arrayOfBands[i];
-    if (product.isInStock) {
+function displayProducts(arrayOfProducts) {
+  for (let i = 0; i < arrayOfProducts.length; i++) {
+    let isInStock = "";
+    const supermarketProduct = arrayOfProducts[i];
+    if (supermarketProduct.isInStock) {
       isInStock = "In Stock";
     } else {
       isInStock = "Not In Stock";
     }
 
-    let displayOfBands = `
+    let displayOfProducts = `
 <div class="card" style="width: 18rem;">
    <div class="card-body">
-    <h5 class="card-title">Bands </h5>
-    <p class="card-text">${musicBand.name}</p>
+    <h5 class="card-title">Supermarket Products </h5>
+    <p class="card-text">${supermarketProduct.name}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${musicBand.genre}</li>
-    <li class="list-group-item">${musicBand.formedYear}</li>
-    <li class="list-group-item">${active}</li>
+    <li class="list-group-item">${supermarketProduct.category}</li>
+    <li class="list-group-item">${supermarketProduct.price}</li>
+    <li class="list-group-item">${isInStock}</li>
   </ul>
 </div>`;
-    document.getElementById("favoriteBands").innerHTML += displayOfBands;
+    document.getElementById("productAvailability").innerHTML +=
+      displayOfProducts;
   }
 }
-displayBands(musicBands);
+displayProducts(supermarketProducts);
