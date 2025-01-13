@@ -25,7 +25,7 @@ function displayBands(arrayOfBands) {
     let displayOfBands = `
 <div class="card" style="width: 18rem;">
    <div class="card-body">
-    <h5 class="card-title">Bands </h5>
+    <h5 class="card-title">Band: </h5>
     <p class="card-text">${musicBand.name}</p>
   </div>
   <ul class="list-group list-group-flush">
